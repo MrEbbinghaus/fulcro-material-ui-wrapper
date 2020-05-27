@@ -6,3 +6,6 @@ Wrapper of https://material-ui.com/ for fulcro
 # WARNING!
 This repo is far from complete. I use it for my own projects and usually only add what I need myself.
 Feel free to open an issue or merge request, when you are interested in extending it.
+
+Have a peek here: https://github.com/MrEbbinghaus/Todoish/blob/master/src/main/todoish/models/todo.cljs#L40
+Until I want to write a better doc.
