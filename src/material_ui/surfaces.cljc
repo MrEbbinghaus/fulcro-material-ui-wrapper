@@ -7,6 +7,9 @@
                ["@material-ui/core/Card" :default Card]
                ["@material-ui/core/CardContent" :default CardContent]
                ["@material-ui/core/CardActions" :default CardActions]
+               ["@material-ui/core/CardHeader" :default CardHeader]
+               ["@material-ui/core/CardMedia" :default CardMedia]
+               ["@material-ui/core/CardActionArea" :default CardActionArea]
                ["@material-ui/core/ExpansionPanel" :default ExpansionPanel]
                ["@material-ui/core/ExpansionPanelSummary" :default ExpansionPanelSummary]
                ["@material-ui/core/ExpansionPanelDetails" :default ExpansionPanelDetails]
@@ -19,6 +22,9 @@
 (def card (interop/react-factory #?(:cljs Card :clj nil)))
 (def card-content (interop/react-factory #?(:cljs CardContent :clj nil)))
 (def card-actions (interop/react-factory #?(:cljs CardActions :clj nil)))
+(def card-action-area (interop/react-factory #?(:cljs CardActionArea :clj nil)))
+(def card-header (interop/react-factory #?(:cljs CardHeader :clj nil)))
+(def card-media (interop/react-factory #?(:cljs CardMedia :clj nil)))
 
 (def expansion-panel (interop/react-factory #?(:cljs ExpansionPanel :clj nil)))
 (def expansion-panel-summary (interop/react-factory #?(:cljs ExpansionPanelSummary :clj nil)))

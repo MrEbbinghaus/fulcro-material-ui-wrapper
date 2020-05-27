@@ -4,10 +4,22 @@
   <groupId>com.github.mrebbinghaus</groupId>
   <artifactId>fulcro-material-ui-wrapper</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.0-alpha1</version>
+  <version>0.2.0</version>
   <name>fulcro-material-ui-wrapper</name>
   <description>Wrapper of https://material-ui.com/ for fulcro</description>
-  <scm/>
+  <url>https://github.com/MrEbbinghaus/fulcro-material-ui-wrapper</url>
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>https://github.com/MrEbbinghaus/fulcro-material-ui-wrapper/blob/master/LICENSE</url>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://github.com/MrEbbinghaus/fulcro-material-ui-wrapper</url>
+    <connection>scm:git:git://github.com/MrEbbinghaus/fulcro-material-ui-wrapper.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/MrEbbinghaus/fulcro-material-ui-wrapper.git</developerConnection>
+    <tag>3f370ca4a37252a08e6e7237318f161647c9d1a9</tag>
+  </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>test</testSourceDirectory>
@@ -54,7 +66,7 @@
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>clojurescript</artifactId>
-      <version>1.10.520</version>
+      <version>1.10.764</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
