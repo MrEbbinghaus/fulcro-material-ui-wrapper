@@ -1,4 +1,4 @@
-(defproject com.github.mrebbinghaus/fulcro-material-ui-wrapper "0.3.0"
+(defproject com.github.mrebbinghaus/fulcro-material-ui-wrapper "0.4.0"
   :description "Wrapper of https://material-ui.com/ for fulcro"
   :url "https://github.com/MrEbbinghaus/fulcro-material-ui-wrapper"
   :license {:name "MIT"

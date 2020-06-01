@@ -9,12 +9,21 @@
          ["@material-ui/core/ListItemIcon" :default ListItemIcon]
          ["@material-ui/core/ListItemSecondaryAction" :default ListItemSecondaryAction]
          ["@material-ui/core/Typography" :default Typography]
-         ["@material-ui/core/Divider" :default Divider]])))
+         ["@material-ui/core/Divider" :default Divider]
+         ["@material-ui/core/Chip" :default Chip]
+         ["@material-ui/core/Badge" :default Badge]
+         ["@material-ui/core/Avatar" :default Avatar]])))
 
 (def list (interop/react-factory #?(:cljs List :clj nil)))
 (def list-item (interop/react-factory #?(:cljs ListItem :clj nil)))
 (def list-item-text (interop/react-factory #?(:cljs ListItemText :clj nil)))
 (def list-item-icon (interop/react-factory #?(:cljs ListItemIcon :clj nil)))
 (def list-item-secondary-action (interop/react-factory #?(:cljs ListItemSecondaryAction :clj nil)))
+
 (def typography (interop/react-factory #?(:cljs Typography :clj nil)))
 (def divider (interop/react-factory #?(:cljs Divider :clj nil)))
+
+(def chip (interop/react-factory #?(:cljs Chip :clj nil)))
+(def badge (interop/react-factory #?(:cljs Badge :clj nil)))
+
+(def avatar (interop/react-factory #?(:cljs Avatar :clj nil)))
