@@ -4,7 +4,7 @@
   <groupId>com.github.mrebbinghaus</groupId>
   <artifactId>fulcro-material-ui-wrapper</artifactId>
   <packaging>jar</packaging>
-  <version>0.5.0</version>
+  <version>4.11.0-alpha</version>
   <name>fulcro-material-ui-wrapper</name>
   <description>Wrapper of https://material-ui.com/ for fulcro</description>
   <url>https://github.com/MrEbbinghaus/fulcro-material-ui-wrapper</url>
@@ -18,7 +18,7 @@
     <url>https://github.com/MrEbbinghaus/fulcro-material-ui-wrapper</url>
     <connection>scm:git:git://github.com/MrEbbinghaus/fulcro-material-ui-wrapper.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/MrEbbinghaus/fulcro-material-ui-wrapper.git</developerConnection>
-    <tag>1b51b997eb5e68a162687150294c9dcd4fca67ab</tag>
+    <tag>4f80d798f09b6e226f358ce282645fe266202c8e</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
