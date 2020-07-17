@@ -10,10 +10,10 @@
                ["@material-ui/core/CardHeader" :default CardHeader]
                ["@material-ui/core/CardMedia" :default CardMedia]
                ["@material-ui/core/CardActionArea" :default CardActionArea]
-               ["@material-ui/core/ExpansionPanel" :default ExpansionPanel]
-               ["@material-ui/core/ExpansionPanelSummary" :default ExpansionPanelSummary]
-               ["@material-ui/core/ExpansionPanelDetails" :default ExpansionPanelDetails]
-               ["@material-ui/core/ExpansionPanelActions" :default ExpansionPanelActions]])))
+               ["@material-ui/core/Accordion" :default Accordion]
+               ["@material-ui/core/AccordionSummary" :default AccordionSummary]
+               ["@material-ui/core/AccordionDetails" :default AccordionDetails]
+               ["@material-ui/core/AccordionActions" :default AccordionActions]])))
 
 (def paper (interop/react-factory #?(:cljs Paper :clj nil)))
 (def app-bar (interop/react-factory #?(:cljs AppBar :clj nil)))
@@ -26,7 +26,12 @@
 (def card-header (interop/react-factory #?(:cljs CardHeader :clj nil)))
 (def card-media (interop/react-factory #?(:cljs CardMedia :clj nil)))
 
-(def expansion-panel (interop/react-factory #?(:cljs ExpansionPanel :clj nil)))
-(def expansion-panel-summary (interop/react-factory #?(:cljs ExpansionPanelSummary :clj nil)))
-(def expansion-panel-details (interop/react-factory #?(:cljs ExpansionPanelDetails :clj nil)))
-(def expansion-panel-actions (interop/react-factory #?(:cljs ExpansionPanelActions :clj nil)))
+(def accordion (interop/react-factory #?(:cljs Accordion :clj nil)))
+(def accordion-panel-summary (interop/react-factory #?(:cljs AccordionSummary :clj nil)))
+(def accordion-panel-details (interop/react-factory #?(:cljs AccordionDetails :clj nil)))
+(def accordion-panel-actions (interop/react-factory #?(:cljs AccordionActions :clj nil)))
+
+(def expansion-panel accordion)
+(def expansion-panel-summary accordion-panel-summary)
+(def expansion-panel-details accordion-panel-details)
+(def expansion-panel-actions accordion-panel-actions)
