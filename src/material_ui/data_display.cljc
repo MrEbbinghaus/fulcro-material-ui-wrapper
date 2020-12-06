@@ -9,6 +9,7 @@
          ["@material-ui/core/ListItemIcon" :default ListItemIcon]
          ["@material-ui/core/ListItemAvatar" :default ListItemAvatar]
          ["@material-ui/core/ListItemSecondaryAction" :default ListItemSecondaryAction]
+         ["@material-ui/core/ListSubheader" :default ListSubheader]
          ["@material-ui/core/Typography" :default Typography]
          ["@material-ui/core/Divider" :default Divider]
          ["@material-ui/core/Chip" :default Chip]
@@ -21,6 +22,7 @@
 (def list-item-icon (interop/react-factory #?(:cljs ListItemIcon :clj nil)))
 (def list-item-avatar (interop/react-factory #?(:cljs ListItemAvatar :clj nil)))
 (def list-item-secondary-action (interop/react-factory #?(:cljs ListItemSecondaryAction :clj nil)))
+(def list-subheader (interop/react-factory #?(:cljs ListSubheader :clj nil)))
 
 (def typography (interop/react-factory #?(:cljs Typography :clj nil)))
 (def divider (interop/react-factory #?(:cljs Divider :clj nil)))
