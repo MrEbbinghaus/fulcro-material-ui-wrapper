@@ -18,7 +18,7 @@
     <url>https://github.com/MrEbbinghaus/fulcro-material-ui-wrapper</url>
     <connection>scm:git:git://github.com/MrEbbinghaus/fulcro-material-ui-wrapper.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/MrEbbinghaus/fulcro-material-ui-wrapper.git</developerConnection>
-    <tag>4f80d798f09b6e226f358ce282645fe266202c8e</tag>
+    <tag>cb7822ad612226bea9569d74a66ff56823c3cbbf</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>

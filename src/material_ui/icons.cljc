@@ -1,5 +1,5 @@
 (ns material-ui.icons
-  (:refer-clojure :exclude [comment])
+  (:refer-clojure :exclude [comment remove])
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@material-ui/icons/Comment" :default Comment]
