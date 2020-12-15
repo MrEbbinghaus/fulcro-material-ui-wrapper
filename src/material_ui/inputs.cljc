@@ -3,6 +3,7 @@
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@material-ui/core/TextField" :default TextField]
                ["@material-ui/core/Button" :default Button]
+               ["@material-ui/core/ButtonBase" :default ButtonBase]
                ["@material-ui/core/Fab" :default Fab]
                ["@material-ui/core/IconButton" :default IconButton]
                ["@material-ui/core/InputBase" :default InputBase]
@@ -13,6 +14,8 @@
 
 (def textfield (interop/react-input-factory #?(:cljs TextField :clj nil)))
 (def button (interop/react-factory #?(:cljs Button :clj nil)))
+(def button-base (interop/react-factory #?(:cljs ButtonBase :clj nil)))
+
 (def fab (interop/react-factory #?(:cljs Fab :clj nil)))
 (def icon-button (interop/react-factory #?(:cljs IconButton :clj nil)))
 (def input-base (interop/react-input-factory #?(:cljs InputBase :clj nil)))
