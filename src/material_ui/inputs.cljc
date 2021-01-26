@@ -13,7 +13,7 @@
                ["@material-ui/core/Select" :default Select]
                ["@material-ui/core/NativeSelect" :default NativeSelect]])))
 
-(def textfield (interop/react-input-factory #?(:cljs TextField :clj nil)))
+(def textfield (interop/react-factory #?(:cljs TextField :clj nil)))
 (def button (interop/react-factory #?(:cljs Button :clj nil)))
 (def button-base (interop/react-factory #?(:cljs ButtonBase :clj nil)))
 (def button-group (interop/react-factory #?(:cljs ButtonGroup :clj nil)))
@@ -24,5 +24,5 @@
 (def input-adornment (interop/react-factory #?(:cljs InputAdornment :clj nil)))
 (def checkbox (interop/react-input-factory #?(:cljs Checkbox :clj nil)))
 
-(def select (interop/react-input-factory #?(:cljs Select :clj nil)))
+(def select (interop/react-factory #?(:cljs Select :clj nil)))
 (def native-select (interop/react-input-factory #?(:cljs NativeSelect :clj nil)))
