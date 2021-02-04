@@ -11,12 +11,14 @@
                ["@material-ui/core/InputAdornment" :default InputAdornment]
                ["@material-ui/core/Checkbox" :default Checkbox]
                ["@material-ui/core/Select" :default Select]
-               ["@material-ui/core/NativeSelect" :default NativeSelect]])))
+               ["@material-ui/core/NativeSelect" :default NativeSelect]
+               ["@material-ui/core/Switch" :default Switch]])))
 
 (def textfield (interop/react-factory #?(:cljs TextField :clj nil)))
 (def button (interop/react-factory #?(:cljs Button :clj nil)))
 (def button-base (interop/react-factory #?(:cljs ButtonBase :clj nil)))
 (def button-group (interop/react-factory #?(:cljs ButtonGroup :clj nil)))
+(def switch (interop/react-factory #?(:cljs Switch :clj nil)))
 
 (def fab (interop/react-factory #?(:cljs Fab :clj nil)))
 (def icon-button (interop/react-factory #?(:cljs IconButton :clj nil)))
