@@ -1,4 +1,2 @@
 {:paths ["src"]
- :deps 
- {org.clojure/clojurescript {:mvn/version "1.10.844" :scope "provided"}
-  com.fulcrologic/fulcro {:mvn/version "3.4.20" :scope "provided"}}}
+ :deps {com.fulcrologic/fulcro {:mvn/version "3.0.0"}}}
