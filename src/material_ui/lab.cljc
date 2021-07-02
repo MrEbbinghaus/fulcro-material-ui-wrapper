@@ -1,16 +1,13 @@
 (ns material-ui.lab
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-    #?@(:cljs [["@material-ui/lab/SpeedDial" :default SpeedDial]
-               ["@material-ui/lab/SpeedDialAction" :default SpeedDialAction]
-               ["@material-ui/lab/SpeedDialIcon" :default SpeedDialIcon]
-               ["@material-ui/lab/Skeleton" :default Skeleton]
-               ["@material-ui/lab/Autocomplete" :default Autocomplete]])))
+    [material-ui.feedback.skeleton :as feedback.skeleton]
+    [material-ui.navigation.speed-dial :as navigation.speed-dial]
+    #?@(:cljs [["@material-ui/core/Autocomplete" :default Autocomplete]])))
 
-(def speed-dial (interop/react-factory #?(:cljs SpeedDial :clj nil)))
-(def speed-dial-action (interop/react-factory #?(:cljs SpeedDialAction :clj nil)))
+(def ^:deprecated speed-dial navigation.speed-dial/speed-dial)
+(def ^:deprecated speed-dial-action navigation.speed-dial/action)
 
-(def ^{:arglists '({:keys [animation classes component height variant width]} & children)} 
-  skeleton (interop/react-factory #?(:cljs Skeleton :clj nil)))
+(def ^:deprecated skeleton feedback.skeleton/skeleton)
 
 (def autocomplete (interop/react-factory #?(:cljs Autocomplete :clj nil)))

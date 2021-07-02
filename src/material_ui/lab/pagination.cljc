@@ -1,8 +1,6 @@
-(ns material-ui.lab.pagination
+(ns ^:deprecated material-ui.lab.pagination
   (:require
-   [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-   #?@(:cljs [["@material-ui/lab/Pagination" :default Pagination]
-              ["@material-ui/lab/PaginationItem" :default PaginationItem]])))
+   [material-ui.navigation.pagination :as navigation.pagination]))
 
-(def pagination (interop/react-factory #?(:cljs Pagination :clj nil)))
-(def item (interop/react-factory #?(:cljs PaginationItem :clj nil)))
+(def ^:deprecated pagination navigation.pagination/pagination)
+(def ^:deprecated item navigation.pagination/item)

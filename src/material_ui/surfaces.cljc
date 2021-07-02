@@ -31,7 +31,7 @@
 (def accordion-panel-details (interop/react-factory #?(:cljs AccordionDetails :clj nil)))
 (def accordion-panel-actions (interop/react-factory #?(:cljs AccordionActions :clj nil)))
 
-(def expansion-panel accordion)
-(def expansion-panel-summary accordion-panel-summary)
-(def expansion-panel-details accordion-panel-details)
-(def expansion-panel-actions accordion-panel-actions)
+(def ^:deprecated expansion-panel accordion)
+(def ^:deprecated expansion-panel-summary accordion-panel-summary)
+(def ^:deprecated expansion-panel-details accordion-panel-details)
+(def ^:deprecated expansion-panel-actions accordion-panel-actions)

@@ -1,4 +1,4 @@
-(ns material-ui.icons
+(ns ^:deprecated material-ui.icons
   (:refer-clojure :exclude [comment remove])
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
