@@ -5,9 +5,9 @@
    #?@(:cljs [["@material-ui/core/Tab" :default Tab]
               ["@material-ui/core/TabScrollButton" :default TabScrollButton]
               ["@material-ui/core/Tabs" :default Tabs]
-              ["@material-ui/lab/TabContext" :default TabContext]
-              ["@material-ui/lab/TabList" :default TabList]
-              ["@material-ui/lab/TabPanel" :default TabPanel]])))
+              ["@material-ui/core/TabContext" :default TabContext]
+              ["@material-ui/core/TabList" :default TabList]
+              ["@material-ui/core/TabPanel" :default TabPanel]])))
 
 (def tab (interop/react-factory #?(:cljs Tab :clj nil)))
 (def context (interop/react-factory #?(:cljs TabContext :clj nil)))

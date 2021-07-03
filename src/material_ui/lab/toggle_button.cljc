@@ -1,8 +1,6 @@
-(ns material-ui.lab.toggle-button
+(ns ^:deprecated material-ui.lab.toggle-button
   (:require
-   [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-   #?@(:cljs [["@material-ui/lab/ToggleButton" :default ToggleButton]
-              ["@material-ui/lab/ToggleButtonGroup" :default ToggleButtonGroup]])))
+    [material-ui.inputs.toggle-button :as inputs.toggle-button]))
 
-(def button (interop/react-factory #?(:cljs ToggleButton :clj nil)))
-(def button-group (interop/react-factory #?(:cljs ToggleButtonGroup :clj nil)))
+(def ^:deprecated button inputs.toggle-button/button)
+(def ^:deprecated button-group inputs.toggle-button/button-group)

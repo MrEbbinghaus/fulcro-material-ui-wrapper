@@ -19,9 +19,13 @@
 
 #?(:cljs 
     (defn styled 
+      ([component style-m-or-f]
+       (styled component style-m-or-f {}))
       ([component style-m-or-f options]
-        (let [styles (cond-> style-m-or-f (map? style-m-or-f) clj->js)]
-          (interop/react-factory
-            (if (map? style-m-or-f)
-              ((mui-styled component) (clj->js style-m-or-f) (clj->js options))
-              ((mui-styled component) (fn [theme] (clj->js (style-m-or-f (js->clj theme :keywordize-keys true)))) (clj->js options))))))))
+       (let [styled-component (mui-styled component)]
+         (interop/react-factory
+           (if (map? style-m-or-f)
+             (styled-component (clj->js style-m-or-f) (clj->js options))
+             (styled-component      
+               #(-> % (js->clj :keywordize-keys true) style-m-or-f clj->js)
+               (clj->js options))))))))
