@@ -1,4 +1,5 @@
 # fulcro-material-ui-wrapper
+
 Wrapper of https://material-ui.com/ for fulcro
 
 Use this in your deps.edn
@@ -6,6 +7,19 @@ Use this in your deps.edn
 com.github.mrebbinghaus/fulcro-material-ui-wrapper
 {:git/url "https://github.com/MrEbbinghaus/fulcro-material-ui-wrapper"
  :sha "<latest-sha>"}
+```
+
+# Sample
+
+JavaScript:
+
+```js
+<Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+```
+
+ClojureScript
+```cljs
+(mui/typography {:variant "h6" :color "inherit" :noWrap true :className "toolbarTitle"} "")
 ```
 
 # WARNING!
