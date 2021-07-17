@@ -24,7 +24,7 @@
                (dissoc :value)
                (update :options #(apply array %))
                (dom/convert-props))]
-         (set! (.-value js-props value))
+         (set! (.-value js-props) value)
          (apply js/React.createElement
            Autocomplete
            js-props
