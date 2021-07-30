@@ -8,7 +8,7 @@
          ["@material-ui/core/Chip" :default Chip]
          ["@material-ui/core/Badge" :default Badge]
          ["@material-ui/core/Avatar" :default Avatar]
-         ["@material-ui/lab/AvatarGroup" :default AvatarGroup]
+         ["@material-ui/core/AvatarGroup" :default AvatarGroup]
          ["@material-ui/core/Tooltip" :default Tooltip]])))
 
 (def typography (interop/react-factory #?(:cljs Typography :clj nil)))
