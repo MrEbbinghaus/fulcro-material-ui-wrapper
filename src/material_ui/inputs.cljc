@@ -12,7 +12,9 @@
                ["@material-ui/core/Checkbox" :default Checkbox]
                ["@material-ui/core/Select" :default Select]
                ["@material-ui/core/NativeSelect" :default NativeSelect]
-               ["@material-ui/core/Switch" :default Switch]])))
+               ["@material-ui/core/Switch" :default Switch]
+               ["@material-ui/core/Radio" :default Radio]
+               ["@material-ui/core/RadioGroup" :default RadioGroup]])))
 
 (def textfield (interop/react-factory #?(:cljs TextField :clj nil)))
 (def button (interop/react-factory #?(:cljs Button :clj nil)))
@@ -28,3 +30,6 @@
 
 (def select (interop/react-factory #?(:cljs Select :clj nil)))
 (def native-select (interop/react-input-factory #?(:cljs NativeSelect :clj nil)))
+
+(def radio (interop/react-factory #?(:cljs Radio :clj nil)))
+(def radio-group (interop/react-factory #?(:cljs RadioGroup :clj nil)))
