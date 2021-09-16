@@ -1,24 +1,27 @@
-(ns ^:deprecated material-ui.inputs
+(ns mui.inputs
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-    #?@(:cljs [["@mui/material/TextField" :default TextField]
-               ["@mui/material/Button" :default Button]
-               ["@mui/material/ButtonBase" :default ButtonBase]
-               ["@mui/material/ButtonGroup" :default ButtonGroup]
-               ["@mui/material/Fab" :default Fab]
-               ["@mui/material/IconButton" :default IconButton]
-               ["@mui/material/InputBase" :default InputBase]
-               ["@mui/material/InputAdornment" :default InputAdornment]
-               ["@mui/material/Checkbox" :default Checkbox]
-               ["@mui/material/Select" :default Select]
-               ["@mui/material/NativeSelect" :default NativeSelect]
-               ["@mui/material/Switch" :default Switch]
-               ["@mui/material/Radio" :default Radio]
-               ["@mui/material/RadioGroup" :default RadioGroup]])))
+    #?@(:cljs
+        [["@mui/material/TextField" :default TextField]
+         ["@mui/material/Button" :default Button]
+         ["@mui/material/ButtonBase" :default ButtonBase]
+         ["@mui/material/ButtonGroup" :default ButtonGroup]
+         ["@mui/material/Fab" :default Fab]
+         ["@mui/material/IconButton" :default IconButton]
+         ["@mui/material/InputBase" :default InputBase]
+         ["@mui/material/InputAdornment" :default InputAdornment]
+         ["@mui/material/Checkbox" :default Checkbox]
+         ["@mui/material/Select" :default Select]
+         ["@mui/material/NativeSelect" :default NativeSelect]
+         ["@mui/material/Switch" :default Switch]
+         ["@mui/material/Radio" :default Radio]
+         ["@mui/material/RadioGroup" :default RadioGroup]
+         ["@mui/lab/LoadingButton" :default LoadingButton]])))
 
 (def textfield (interop/react-factory #?(:cljs TextField :clj nil)))
 (def button (interop/react-factory #?(:cljs Button :clj nil)))
 (def button-base (interop/react-factory #?(:cljs ButtonBase :clj nil)))
+(def loading-button (interop/react-factory #?(:cljs LoadingButton :clj nil)))
 (def button-group (interop/react-factory #?(:cljs ButtonGroup :clj nil)))
 (def switch (interop/react-factory #?(:cljs Switch :clj nil)))
 

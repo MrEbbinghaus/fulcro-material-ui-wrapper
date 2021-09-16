@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.lab
+(ns mui.lab
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/Pagination" :default Pagination]

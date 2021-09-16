@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.inputs.form
+(ns mui.inputs.form
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/FormControl" :default FormControl]

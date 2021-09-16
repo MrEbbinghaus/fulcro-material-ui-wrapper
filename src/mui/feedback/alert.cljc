@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.feedback.alert
+(ns mui.feedback.alert
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/Alert" :default Alert]

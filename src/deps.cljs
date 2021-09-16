@@ -1,3 +1,4 @@
 {:npm-deps
- {"@material-ui/core" "^5.0.0-beta.2"
-  "@material-ui/icons" "^5.0.0-beta.1"}}
+ {"@mui/material" "^5.0.0"
+  "@mui/icons-material" "^5.0.0"
+  "@mui/lab" "^5.0.0-alpha.47"}}

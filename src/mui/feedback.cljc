@@ -1,8 +1,8 @@
-(ns ^:deprecated material-ui.feedback
+(ns mui.feedback
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/Backdrop" :default Backdrop]
-               ["@mui/material/CircularProgress" :as CircularProgress]
+               ["@mui/material/CircularProgress" :default CircularProgress]
                ["@mui/material/LinearProgress" :default LinearProgress]
                ["@mui/material/Snackbar" :default Snackbar]])))
 

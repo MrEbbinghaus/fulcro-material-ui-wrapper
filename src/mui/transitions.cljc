@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.transitions
+(ns mui.transitions
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/Fade" :default Fade]

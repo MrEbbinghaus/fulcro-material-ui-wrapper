@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.progress
+(ns mui.progress
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/LinearProgress" :default LinearProgress]])))

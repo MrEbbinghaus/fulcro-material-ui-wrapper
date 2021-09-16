@@ -1,11 +1,11 @@
-(ns material-ui.surfaces
+(ns ^:deprecated material-ui.surfaces
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-    [material-ui.surfaces.card :as surfaces.card]
-    [material-ui.surfaces.accordion :as surfaces.accordion]
-    #?@(:cljs [["@material-ui/core/Paper" :default Paper]
-               ["@material-ui/core/AppBar" :default AppBar]
-               ["@material-ui/core/Toolbar" :default ToolBar]])))
+    [mui.surfaces.card :as surfaces.card]
+    [mui.surfaces.accordion :as surfaces.accordion]
+    #?@(:cljs [["@mui/material/Paper" :default Paper]
+               ["@mui/material/AppBar" :default AppBar]
+               ["@mui/material/Toolbar" :default ToolBar]])))
 
 (def paper (interop/react-factory #?(:cljs Paper :clj nil)))
 (def app-bar (interop/react-factory #?(:cljs AppBar :clj nil)))

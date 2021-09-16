@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.surfaces.card
+(ns mui.surfaces.card
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/Card" :default Card]

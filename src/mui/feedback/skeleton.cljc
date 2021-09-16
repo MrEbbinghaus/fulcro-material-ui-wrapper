@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.feedback.skeleton
+(ns mui.feedback.skeleton
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/Skeleton" :default Skeleton]])))

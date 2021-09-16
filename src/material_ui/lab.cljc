@@ -1,9 +1,9 @@
-(ns material-ui.lab
+(ns ^:deprecated material-ui.lab
   (:require
     [material-ui.feedback.skeleton :as feedback.skeleton]
     [material-ui.navigation.speed-dial :as navigation.speed-dial]
     #?@(:cljs [[com.fulcrologic.fulcro.dom :as dom]
-               ["@material-ui/core/Autocomplete" :default Autocomplete]])))
+               ["@mui/material/Autocomplete" :default Autocomplete]])))
 
 (def ^:deprecated speed-dial navigation.speed-dial/speed-dial)
 (def ^:deprecated speed-dial-action navigation.speed-dial/action)

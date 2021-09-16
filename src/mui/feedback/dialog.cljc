@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.feedback.dialog
+(ns mui.feedback.dialog
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/Dialog" :default Dialog]

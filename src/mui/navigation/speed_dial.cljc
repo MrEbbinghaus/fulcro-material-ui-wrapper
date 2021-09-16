@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.navigation.speed-dial
+(ns mui.navigation.speed-dial
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/SpeedDial" :default SpeedDial]

@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.styles
+(ns mui.styles
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs

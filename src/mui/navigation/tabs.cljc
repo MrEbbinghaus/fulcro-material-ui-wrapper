@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.navigation.tabs
+(ns mui.navigation.tabs
   (:refer-clojure :exclude [list])
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]

@@ -1,12 +1,12 @@
-(ns material-ui.layout
+(ns ^:deprecated material-ui.layout
   (:require
-   [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-   #?@(:cljs [["@material-ui/core/Container" :default Container]
-              ["@material-ui/core/Box" :default Box]
-              ["@material-ui/core/Hidden" :default Hidden]           
-              ["@material-ui/core/ImageList" :default ImageList]
-              ["@material-ui/core/ImageListItem" :default ImageListItem]
-              ["@material-ui/core/ImageListItemBar" :default ImageListItemBar]])))
+    [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
+    #?@(:cljs [["@mui/material/Container" :default Container]
+               ["@mui/material/Box" :default Box]
+               ["@mui/material/Hidden" :default Hidden]
+               ["@mui/material/ImageList" :default ImageList]
+               ["@mui/material/ImageListItem" :default ImageListItem]
+               ["@mui/material/ImageListItemBar" :default ImageListItemBar]])))
 
 (def container (interop/react-factory #?(:cljs Container :clj nil)))
 (def box (interop/react-factory #?(:cljs Box :clj nil)))

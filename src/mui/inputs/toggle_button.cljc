@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.inputs.toggle-button
+(ns mui.inputs.toggle-button
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/ToggleButton" :default ToggleButton]

@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.surfaces.accordion
+(ns mui.surfaces.accordion
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/Accordion" :default Accordion]

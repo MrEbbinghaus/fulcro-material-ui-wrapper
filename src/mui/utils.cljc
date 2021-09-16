@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.utils
+(ns mui.utils
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/CssBaseline" :default CssBaseline]

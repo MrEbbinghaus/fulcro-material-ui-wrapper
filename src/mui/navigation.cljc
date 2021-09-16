@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.navigation
+(ns mui.navigation
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs [["@mui/material/Drawer" :default Drawer]

@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.data-display
+(ns mui.data-display
   (:refer-clojure :exclude [list])
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]

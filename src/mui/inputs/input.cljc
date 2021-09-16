@@ -1,12 +1,13 @@
-(ns ^:deprecated material-ui.inputs.input
+(ns mui.inputs.input
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-    #?@(:cljs [["@mui/material/Input" :default Input]
-               ["@mui/material/InputBase" :default InputBase]
-               ["@mui/material/InputAdornment" :default InputAdornment]
-               ["@mui/material/InputLabel" :default InputLabel]
-               ["@mui/material/FilledInput" :default FilledInput]
-               ["@mui/material/OutlinedInput" :default OutlinedInput]])))
+    #?@(:cljs
+        [["@mui/material/Input" :default Input]
+         ["@mui/material/InputBase" :default InputBase]
+         ["@mui/material/InputAdornment" :default InputAdornment]
+         ["@mui/material/InputLabel" :default InputLabel]
+         ["@mui/material/FilledInput" :default FilledInput]
+         ["@mui/material/OutlinedInput" :default OutlinedInput]])))
 
 (def input (interop/react-input-factory #?(:cljs Input :clj nil)))
 (def base (interop/react-input-factory #?(:cljs InputBase :clj nil)))

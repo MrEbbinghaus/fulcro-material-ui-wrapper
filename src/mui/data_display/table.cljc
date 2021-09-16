@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.data-display.table
+(ns mui.data-display.table
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs

@@ -1,4 +1,4 @@
-(ns ^:deprecated material-ui.navigation.stepper
+(ns mui.navigation.stepper
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs
