@@ -1,16 +1,26 @@
 # fulcro-material-ui-wrapper
-Wrapper of https://material-ui.com/ for fulcro
 
-Use this in your deps.edn
+Bindings of [MUI](https://mui.com/) (former Material UI) for [fulcro](https://github.com/fulcrologic/fulcro).
+
+Use this in your deps.edn:
+
 ```clojure
 com.github.mrebbinghaus/fulcro-material-ui-wrapper
 {:git/url "https://github.com/MrEbbinghaus/fulcro-material-ui-wrapper"
  :sha "<latest-sha>"}
 ```
 
-# WARNING!
-This repo is far from complete. I use it for my own projects and usually only add what I need myself.
-Feel free to open an issue or merge request, when you are interested in extending it.
+And prefer ES modules above CommonJS. Read about this in
+the [ShadowCLJS Docs](https://shadow-cljs.github.io/docs/UsersGuide.html#js-entry-keys)
 
-Have a peek here: https://github.com/MrEbbinghaus/Todoish/blob/b1fd5f9d43e6f9ffbd32515086b07f3951dd2125/src/main/todoish/models/todo.cljs#L45
-Until I want to write a better doc.
+```clojure
+{:js-options {:entry-keys ["module" "browser" "main"]}}
+```
+
+## WARNING!
+
+This repo is far from complete. I use it for my own projects and usually only add what I need myself. Feel free to open
+an issue or merge request, when you are interested in extending it.
+
+This repo makes heavy use of this lib: https://github.com/hhucn/decide3
+Have a look until I want to write a better doc.
