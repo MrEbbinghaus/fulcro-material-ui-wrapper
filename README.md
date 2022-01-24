@@ -22,5 +22,5 @@ the [ShadowCLJS Docs](https://shadow-cljs.github.io/docs/UsersGuide.html#js-entr
 This repo is far from complete. I use it for my own projects and usually only add what I need myself. Feel free to open
 an issue or merge request, when you are interested in extending it.
 
-This repo makes heavy use of this lib: https://github.com/hhucn/decide3
-Have a look until I want to write a better doc.
+[This project](https://github.com/hhucn/decide3) uses this bindings nearly everywhere.
+Have a look at it until I want to write some doc.
