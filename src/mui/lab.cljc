@@ -1,8 +1,7 @@
 (ns mui.lab
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-    [mui.feedback.skeleton :as feedback.skeleton]
-    [mui.navigation.speed-dial :as navigation.speed-dial]
+    ["react" :as react]
     #?@(:cljs
         [[com.fulcrologic.fulcro.dom :as dom]
          ["@mui/material/Autocomplete" :default Autocomplete]
@@ -28,7 +27,7 @@
                (update :options #(apply array %))
                (dom/convert-props))]
          (set! (.-value js-props) value)
-         (apply js/React.createElement
+         (apply react/createElement
            Autocomplete
            js-props
            children)))))
