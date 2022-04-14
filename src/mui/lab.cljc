@@ -1,22 +1,18 @@
 (ns mui.lab
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
+    [mui.x.date-pickers :as date-pickers]
     ["react" :as react]
     #?@(:cljs
         [[com.fulcrologic.fulcro.dom :as dom]
-         ["@mui/material/Autocomplete" :default Autocomplete]
-         ["@mui/lab/LocalizationProvider" :default LocalizationProvider]
-         ["@mui/lab/DateTimePicker" :default DateTimePicker]
-         ["@mui/lab/DesktopDateTimePicker" :default DesktopDateTimePicker]
-         ["@mui/lab/MobileDateTimePicker" :default MobileDateTimePicker]
-         ["@mui/lab/StaticDateTimePicker" :default StaticDateTimePicker]])))
+         ["@mui/material/Autocomplete" :default Autocomplete]])))
 
-(def localization-provider (interop/react-factory #?(:cljs LocalizationProvider :clj nil)))
+(def ^:deprecated localization-provider date-pickers/localization-provider)
 
-(def date-time-picker (interop/react-factory #?(:cljs DateTimePicker :clj nil)))
-(def desktop-date-time-picker (interop/react-factory #?(:cljs DesktopDateTimePicker :clj nil)))
-(def mobile-date-time-picker (interop/react-factory #?(:cljs MobileDateTimePicker :clj nil)))
-(def static-date-time-picker (interop/react-factory #?(:cljs StaticDateTimePicker :clj nil)))
+(def ^:deprecated date-time-picker date-pickers/date-time-picker)
+(def ^:deprecated desktop-date-time-picker date-pickers/desktop-date-time-picker)
+(def ^:deprecated mobile-date-time-picker date-pickers/mobile-date-time-picker)
+(def ^:deprecated static-date-time-picker date-pickers/static-date-time-picker)
 
 (def autocomplete
   (fn [{:keys [value] :as props} & children]
