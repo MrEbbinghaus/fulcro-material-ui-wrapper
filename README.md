@@ -1,5 +1,7 @@
 # fulcro-material-ui-wrapper
 
+Wrapper of https://material-ui.com/ for fulcro
+
 Bindings of [MUI](https://mui.com/) (former Material UI) for [fulcro](https://github.com/fulcrologic/fulcro).
 
 Use this in your deps.edn:
@@ -15,6 +17,19 @@ the [ShadowCLJS Docs](https://shadow-cljs.github.io/docs/UsersGuide.html#js-entr
 
 ```clojure
 {:js-options {:entry-keys ["module" "browser" "main"]}}
+```
+
+## Sample
+
+JavaScript:
+
+```js
+<Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+```
+
+ClojureScript
+```cljs
+(mui/typography {:variant "h6" :color "inherit" :noWrap true :className "toolbarTitle"} "")
 ```
 
 ## WARNING!
