@@ -1,14 +1,14 @@
-(ns material-ui.icons
+(ns ^:deprecated material-ui.icons
   (:refer-clojure :exclude [comment remove])
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-    #?@(:cljs [["@material-ui/icons/Comment" :default Comment]
-               ["@material-ui/icons/Delete" :default Delete]
-               ["@material-ui/icons/Menu" :default MenuIcon]
-               ["@material-ui/icons/ExpandMore" :default ExpandMoreIcon]
-               ["@material-ui/icons/RemoveCircle" :default RemoveCircleIcon]
-               ["@material-ui/icons/RemoveCircleOutline" :default RemoveCircleOutlineIcon]
-               ["@material-ui/icons/Remove" :default RemoveIcon]])))
+    #?@(:cljs [["@mui/icons/Comment" :default Comment]
+               ["@mui/icons/Delete" :default Delete]
+               ["@mui/icons/Menu" :default MenuIcon]
+               ["@mui/icons/ExpandMore" :default ExpandMoreIcon]
+               ["@mui/icons/RemoveCircle" :default RemoveCircleIcon]
+               ["@mui/icons/RemoveCircleOutline" :default RemoveCircleOutlineIcon]
+               ["@mui/icons/Remove" :default RemoveIcon]])))
 
 (def comment (interop/react-factory #?(:cljs Comment :default nil)))
 (def delete (interop/react-factory #?(:cljs Delete :default nil)))

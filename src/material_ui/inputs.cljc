@@ -1,18 +1,20 @@
-(ns material-ui.inputs
+(ns ^:deprecated material-ui.inputs
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-    #?@(:cljs [["@material-ui/core/TextField" :default TextField]
-               ["@material-ui/core/Button" :default Button]
-               ["@material-ui/core/ButtonBase" :default ButtonBase]
-               ["@material-ui/core/ButtonGroup" :default ButtonGroup]
-               ["@material-ui/core/Fab" :default Fab]
-               ["@material-ui/core/IconButton" :default IconButton]
-               ["@material-ui/core/InputBase" :default InputBase]
-               ["@material-ui/core/InputAdornment" :default InputAdornment]
-               ["@material-ui/core/Checkbox" :default Checkbox]
-               ["@material-ui/core/Select" :default Select]
-               ["@material-ui/core/NativeSelect" :default NativeSelect]
-               ["@material-ui/core/Switch" :default Switch]])))
+    #?@(:cljs [["@mui/material/TextField" :default TextField]
+               ["@mui/material/Button" :default Button]
+               ["@mui/material/ButtonBase" :default ButtonBase]
+               ["@mui/material/ButtonGroup" :default ButtonGroup]
+               ["@mui/material/Fab" :default Fab]
+               ["@mui/material/IconButton" :default IconButton]
+               ["@mui/material/InputBase" :default InputBase]
+               ["@mui/material/InputAdornment" :default InputAdornment]
+               ["@mui/material/Checkbox" :default Checkbox]
+               ["@mui/material/Select" :default Select]
+               ["@mui/material/NativeSelect" :default NativeSelect]
+               ["@mui/material/Switch" :default Switch]
+               ["@mui/material/Radio" :default Radio]
+               ["@mui/material/RadioGroup" :default RadioGroup]])))
 
 (def textfield (interop/react-factory #?(:cljs TextField :clj nil)))
 (def button (interop/react-factory #?(:cljs Button :clj nil)))
@@ -28,3 +30,6 @@
 
 (def select (interop/react-factory #?(:cljs Select :clj nil)))
 (def native-select (interop/react-input-factory #?(:cljs NativeSelect :clj nil)))
+
+(def radio (interop/react-factory #?(:cljs Radio :clj nil)))
+(def radio-group (interop/react-factory #?(:cljs RadioGroup :clj nil)))

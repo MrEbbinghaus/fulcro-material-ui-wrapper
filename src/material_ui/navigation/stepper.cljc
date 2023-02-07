@@ -1,15 +1,15 @@
-(ns material-ui.navigation.stepper
+(ns ^:deprecated material-ui.navigation.stepper
   (:require
-   [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-   #?@(:cljs
-       [["@material-ui/core/MobileStepper" :default MobileStepper]
-        ["@material-ui/core/Step" :default Step]
-        ["@material-ui/core/StepButton" :default StepButton]
-        ["@material-ui/core/StepConnector" :default StepConnector]
-        ["@material-ui/core/StepContent" :default StepContent]
-        ["@material-ui/core/StepIcon" :default StepIcon]
-        ["@material-ui/core/StepLabel" :default StepLabel]
-        ["@material-ui/core/Stepper" :default Stepper]])))
+    [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
+    #?@(:cljs
+        [["@mui/material/MobileStepper" :default MobileStepper]
+         ["@mui/material/Step" :default Step]
+         ["@mui/material/StepButton" :default StepButton]
+         ["@mui/material/StepConnector" :default StepConnector]
+         ["@mui/material/StepContent" :default StepContent]
+         ["@mui/material/StepIcon" :default StepIcon]
+         ["@mui/material/StepLabel" :default StepLabel]
+         ["@mui/material/Stepper" :default Stepper]])))
 
 (def stepper (interop/react-factory #?(:cljs Stepper :clj nil)))
 (def mobile-stepper (interop/react-factory #?(:cljs MobileStepper :clj nil)))

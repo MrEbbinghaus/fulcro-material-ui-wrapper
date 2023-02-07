@@ -2,14 +2,24 @@
 
 Wrapper of https://material-ui.com/ for fulcro
 
-Use this in your deps.edn
+Bindings of [MUI](https://mui.com/) (former Material UI) for [fulcro](https://github.com/fulcrologic/fulcro).
+
+Use this in your deps.edn:
+
 ```clojure
 com.github.mrebbinghaus/fulcro-material-ui-wrapper
 {:git/url "https://github.com/MrEbbinghaus/fulcro-material-ui-wrapper"
  :sha "<latest-sha>"}
 ```
 
-# Sample
+And prefer ES modules above CommonJS. Read about this in
+the [ShadowCLJS Docs](https://shadow-cljs.github.io/docs/UsersGuide.html#js-entry-keys)
+
+```clojure
+{:js-options {:entry-keys ["module" "browser" "main"]}}
+```
+
+## Sample
 
 JavaScript:
 
@@ -22,9 +32,10 @@ ClojureScript
 (mui/typography {:variant "h6" :color "inherit" :noWrap true :className "toolbarTitle"} "")
 ```
 
-# WARNING!
-This repo is far from complete. I use it for my own projects and usually only add what I need myself.
-Feel free to open an issue or merge request, when you are interested in extending it.
+## WARNING!
 
-Have a peek here: https://github.com/MrEbbinghaus/Todoish/blob/b1fd5f9d43e6f9ffbd32515086b07f3951dd2125/src/main/todoish/models/todo.cljs#L45
-Until I want to write a better doc.
+This repo is far from complete. I use it for my own projects and usually only add what I need myself. Feel free to open
+an issue or merge request, when you are interested in extending it.
+
+[This project](https://github.com/hhucn/decide3) uses this bindings nearly everywhere.
+Have a look at it until I want to write some doc.

@@ -1,15 +1,15 @@
-(ns material-ui.data-display.list
+(ns ^:deprecated material-ui.data-display.list
   (:refer-clojure :exclude [list])
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs
-        [["@material-ui/core/List" :default List]
-         ["@material-ui/core/ListItem" :default ListItem]
-         ["@material-ui/core/ListItemText" :default ListItemText]
-         ["@material-ui/core/ListItemIcon" :default ListItemIcon]
-         ["@material-ui/core/ListItemAvatar" :default ListItemAvatar]
-         ["@material-ui/core/ListItemSecondaryAction" :default ListItemSecondaryAction]
-         ["@material-ui/core/ListSubheader" :default ListSubheader]])))
+        [["@mui/material/List" :default List]
+         ["@mui/material/ListItem" :default ListItem]
+         ["@mui/material/ListItemText" :default ListItemText]
+         ["@mui/material/ListItemIcon" :default ListItemIcon]
+         ["@mui/material/ListItemAvatar" :default ListItemAvatar]
+         ["@mui/material/ListItemSecondaryAction" :default ListItemSecondaryAction]
+         ["@mui/material/ListSubheader" :default ListSubheader]])))
 
 (def list ^{:arglists '({:keys [classes component dense disablePadding subheader children]} & children)} (interop/react-factory #?(:cljs List :clj nil)))
 (def item ^{:arglists '({:keys [alignItems autoFocus button children ContainerComponent ContainerProps disabled divider selected classes component dense disableGutters children]} & children)} (interop/react-factory #?(:cljs ListItem :clj nil)))

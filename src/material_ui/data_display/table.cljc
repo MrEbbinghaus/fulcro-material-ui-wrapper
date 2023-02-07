@@ -1,16 +1,16 @@
-(ns material-ui.data-display.table
+(ns ^:deprecated material-ui.data-display.table
   (:require
-   [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-   #?@(:cljs
-       [["@material-ui/core/Table" :default Table]
-        ["@material-ui/core/TableBody" :default TableBody]
-        ["@material-ui/core/TableCell" :default TableCell]
-        ["@material-ui/core/TableContainer" :default TableContainer]
-        ["@material-ui/core/TableFooter" :default TableFooter]
-        ["@material-ui/core/TableHead" :default TableHead]
-        ["@material-ui/core/TablePagination" :default TablePagination]
-        ["@material-ui/core/TableRow" :default TableRow]
-        ["@material-ui/core/TableSortLabel" :default TableSortLabel]])))
+    [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
+    #?@(:cljs
+        [["@mui/material/Table" :default Table]
+         ["@mui/material/TableBody" :default TableBody]
+         ["@mui/material/TableCell" :default TableCell]
+         ["@mui/material/TableContainer" :default TableContainer]
+         ["@mui/material/TableFooter" :default TableFooter]
+         ["@mui/material/TableHead" :default TableHead]
+         ["@mui/material/TablePagination" :default TablePagination]
+         ["@mui/material/TableRow" :default TableRow]
+         ["@mui/material/TableSortLabel" :default TableSortLabel]])))
 
 (def table (interop/react-factory #?(:cljs Table :clj nil)))
 (def body (interop/react-factory #?(:cljs TableBody :clj nil)))

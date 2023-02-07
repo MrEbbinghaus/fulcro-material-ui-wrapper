@@ -1,16 +1,16 @@
-(ns material-ui.navigation
+(ns ^:deprecated material-ui.navigation
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-    #?@(:cljs [["@material-ui/core/Drawer" :default Drawer]
-               ["@material-ui/core/SwipeableDrawer" :default SwipeableDrawer]
-               ["@material-ui/core/Menu" :default Menu]
-               ["@material-ui/core/MenuItem" :default MenuItem]
-               ["@material-ui/core/MenuList" :default MenuList]
-               ["@material-ui/core/Link" :default Link]
-               ["@material-ui/core/BottomNavigation" :default BottomNavigation]
-               ["@material-ui/core/BottomNavigationAction" :default BottomNavigationAction]
-               ["@material-ui/core/Breadcrumbs" :default Breadcrumbs]
-               ])))
+    #?@(:cljs [["@mui/material/Drawer" :default Drawer]
+               ["@mui/material/SwipeableDrawer" :default SwipeableDrawer]
+               ["@mui/material/Menu" :default Menu]
+               ["@mui/material/MenuItem" :default MenuItem]
+               ["@mui/material/MenuList" :default MenuList]
+               ["@mui/material/Link" :default Link]
+               ["@mui/material/BottomNavigation" :default BottomNavigation]
+               ["@mui/material/BottomNavigationAction" :default BottomNavigationAction]
+               ["@mui/material/Breadcrumbs" :default Breadcrumbs]])))
+
 
 (def drawer (interop/react-factory #?(:cljs Drawer :clj nil)))
 (def swipeable-drawer (interop/react-factory #?(:cljs SwipeableDrawer :clj nil)))

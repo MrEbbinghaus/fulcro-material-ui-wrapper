@@ -1,13 +1,15 @@
-(ns material-ui.data-display
+(ns ^:deprecated material-ui.data-display
   (:refer-clojure :exclude [list])
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
     #?@(:cljs
-        [["@material-ui/core/Typography" :default Typography]
-         ["@material-ui/core/Divider" :default Divider]
-         ["@material-ui/core/Chip" :default Chip]
-         ["@material-ui/core/Badge" :default Badge]
-         ["@material-ui/core/Avatar" :default Avatar]])))
+        [["@mui/material/Typography" :default Typography]
+         ["@mui/material/Divider" :default Divider]
+         ["@mui/material/Chip" :default Chip]
+         ["@mui/material/Badge" :default Badge]
+         ["@mui/material/Avatar" :default Avatar]
+         ["@mui/material/AvatarGroup" :default AvatarGroup]
+         ["@mui/material/Tooltip" :default Tooltip]])))
 
 (def typography (interop/react-factory #?(:cljs Typography :clj nil)))
 (def divider (interop/react-factory #?(:cljs Divider :clj nil)))
@@ -16,3 +18,6 @@
 (def badge (interop/react-factory #?(:cljs Badge :clj nil)))
 
 (def avatar (interop/react-factory #?(:cljs Avatar :clj nil)))
+(def avatar-group (interop/react-factory #?(:cljs AvatarGroup :clj nil)))
+
+(def tooltip (interop/react-factory #?(:cljs Tooltip :clj nil)))

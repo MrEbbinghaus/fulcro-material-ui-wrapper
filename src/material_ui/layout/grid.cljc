@@ -1,7 +1,7 @@
-(ns material-ui.layout.grid
+(ns ^:deprecated material-ui.layout.grid
   (:require
-   [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-   #?(:cljs ["@material-ui/core/Grid" :default Grid])))
+    [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
+    #?(:cljs ["@mui/material/Grid" :default Grid])))
 
 (def grid (interop/react-factory #?(:cljs Grid :clj nil)))
 

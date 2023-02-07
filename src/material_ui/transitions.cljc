@@ -1,11 +1,11 @@
-(ns material-ui.transitions
+(ns ^:deprecated material-ui.transitions
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-    #?@(:cljs [["@material-ui/core/Fade" :default Fade]
-               ["@material-ui/core/Collapse" :default Collapse]
-               ["@material-ui/core/Grow" :default Grow]
-               ["@material-ui/core/Zoom" :default Zoom]
-               ["@material-ui/core/Slide" :default Slide]])))
+    #?@(:cljs [["@mui/material/Fade" :default Fade]
+               ["@mui/material/Collapse" :default Collapse]
+               ["@mui/material/Grow" :default Grow]
+               ["@mui/material/Zoom" :default Zoom]
+               ["@mui/material/Slide" :default Slide]])))
 
 (def fade (interop/react-factory #?(:cljs Fade :clj nil)))
 (def collapse (interop/react-factory #?(:cljs Collapse :clj nil)))

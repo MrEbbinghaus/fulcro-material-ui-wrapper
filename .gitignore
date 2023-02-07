@@ -2,3 +2,5 @@ target/
 pom.xml.asc
 .lsp/
 .clj-kondo/
+.cpcache
+*.iml

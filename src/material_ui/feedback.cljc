@@ -1,12 +1,13 @@
-(ns material-ui.feedback
+(ns ^:deprecated material-ui.feedback
   (:require
     [com.fulcrologic.fulcro.algorithms.react-interop :as interop]
-    #?@(:cljs [
-        ["@material-ui/core/LinearProgress" :default LinearProgress]
-        ["@material-ui/core/Snackbar" :default Snackbar]
-        ["@material-ui/core/Backdrop" :default Backdrop]])))
+    #?@(:cljs [["@mui/material/Backdrop" :default Backdrop]
+               ["@mui/material/CircularProgress" :as CircularProgress]
+               ["@mui/material/LinearProgress" :default LinearProgress]
+               ["@mui/material/Snackbar" :default Snackbar]])))
 
 (def linear-progress (interop/react-factory #?(:cljs LinearProgress :clj nil)))
+(def circular-progress (interop/react-factory #?(:cljs CircularProgress :clj nil)))
 
 (def snackbar (interop/react-factory #?(:cljs Snackbar :clj nil)))
 
